@@ -1,0 +1,41 @@
+.btn {
+  width: auto;
+  height: 38px;
+  border-radius: $border-radius-regular;
+  border: none;
+  padding: 9px 20px;
+  font-size: 16px;
+  line-height: 20px;
+  color: $text-base-color;
+  &.btn-full-width {
+    width: 100%;
+  }
+  &.btn-primary {
+    background: $primary-color;
+    color: $white;
+  }
+  &.btn-facebook {
+    background: $blue-fb;
+    border-radius: 8px;
+    color: $white;
+  }
+  &.btn-gmail {
+    background: $deep-red;
+    border-radius: 8px;
+    color: $white;
+  }
+  &.btn-cyan {
+    background: $cyan;
+    border-radius: 8px;
+    color: $white;
+  }
+  &.btn-border-light-gray {
+    background-color: transparent;
+    border: 2px solid $pale-gray;
+  }
+  &.active {
+    background: $primary-color !important;
+    color: $white !important;
+    border: 2px solid $primary-color !important;
+  }
+}

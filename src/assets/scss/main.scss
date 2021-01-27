@@ -1,0 +1,26 @@
+@import '__reset.scss';
+@import '__variables.scss';
+@import '__transaction.scss';
+@import '__icons.scss';
+@import '__containers.scss';
+@import '__forms.scss';
+@import '__buttons.scss';
+@import '__spacing.scss';
+@import '__topbar.scss';
+@import '__modal.scss';
+
+body {
+  background-color: $white;
+  padding: 86px 0 0;
+  margin: 0;
+  font-family: "Montserrat", sans-serif;
+  font-size: $font-size-regular;
+  line-height: $line-height-regular;
+}
+
+@media (max-width: 1024px) {
+  body {
+    padding: 67px 0 0;
+  }
+}
+

@@ -1,0 +1,28 @@
+$primary-color:   #F1C232;
+$text-base-color: #333333;
+$black:           #000000;
+$dark-gray:       #666666;
+$light-gray:      #C4C4C4;
+$pale-gray:       #BDBDBD;
+$white:           #FFFFFF;
+$deep-red:        #b20000;
+$blue-fb:         #3B5998;
+$cyan:            #1FBBB2;
+
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,600&display=swap');
+
+$montserrat:    'Montserrat', sans-serif;
+
+$font-size-regular: 16px;
+$line-height-regular: 20px;
+
+$font-weight-bold: 600;
+$font-weight-normal: 400;
+
+// HAMBURGER ICON
+$height-icon-hbg:         23px;
+$width-line-hbg:          20px;
+$height-line-hbg:         2px;
+
+// BORDER RADIUS
+$border-radius-regular:   8px;

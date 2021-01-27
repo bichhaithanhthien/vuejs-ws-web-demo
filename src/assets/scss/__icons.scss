@@ -1,0 +1,120 @@
+.hamburger-icon {
+  cursor: pointer;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  width: 20px;
+  height: $height-icon-hbg;
+  position: relative;
+  display: block;
+  margin: 3px 0 0;
+  &>.line {
+    display: block;
+    background: $black;
+    width: $width-line-hbg;
+    height: $height-line-hbg;
+    position: relative;
+    margin: 0 auto;
+    border-radius: $height-line-hbg/2;
+    &:nth-child(1) {
+      margin-bottom: $height-line-hbg+5;
+    }
+    &:nth-child(3) {
+      margin-top: $height-line-hbg+5;
+    }
+  }
+}
+
+.close-icon {
+  position: absolute;
+  left: 10px;
+  top: 20px;
+  width: 20px;
+  height: 20px;
+  &:before, &:after {
+    position: absolute;
+    top: -1px;
+    left: 9px;
+    content: ' ';
+    height: 24px;
+    width: 2px;
+    background-color: $black;
+  }
+  &:before {
+    transform: rotate(45deg);
+  }
+  &:after {
+    transform: rotate(-45deg);
+  }
+}
+
+.icon {
+  display: inline-block;
+  float: left;
+  position: relative;
+  &:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-repeat: no-repeat;
+  }
+  &.icon-checked {
+    width: 22px;
+    height: 22px;
+    &:before {
+      width: 22px;
+      height: 22px;
+      background-size: 22px;
+      background-image: url(/icons/icon-checked.svg);
+    }
+  }
+  &.icon-like {
+    width: 22px;
+    height: 19px;
+    &:before {
+      width: 22px;
+      height: 19px;
+      background-size: 22px;
+      background-image: url(/icons/icon-like.svg);
+    }
+    &.liked {
+      &:before {
+        background-image: url(/icons/icon-liked.svg);
+      }
+    }
+  }
+  &.icon-delete {
+    width: 18px;
+    height: 22px;
+    &:before {
+      width: 18px;
+      height: 22px;
+      background-size: 18px;
+      background-image: url(/icons/icon-delete.svg);
+    }
+  }
+  &.icon-file {
+    width: 12px;
+    height: 15px;
+    &:before {
+      width: 12px;
+      height: 15px;
+      background-size: 12px;
+      background-image: url(/icons/icon-file.svg);
+    }
+  }
+  &.icon-round-delete {
+    width: 20px;
+    height: 20px;
+    &:before{
+      width: 20px;
+      height: 20px;
+      background-size: 20px;
+      background-image: url(/icons/icon-round-delete.svg);
+    }
+  }
+}

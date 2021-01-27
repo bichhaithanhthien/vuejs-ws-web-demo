@@ -1,0 +1,10 @@
+a, input, select, button, textarea {
+  outline: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+button, a {
+  cursor: pointer;
+}
