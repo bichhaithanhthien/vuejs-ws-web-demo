@@ -13,8 +13,7 @@ export default {
   components: { ModalMessageOnly },
   props: {
     // List of type:
-    // 1: Sign in successfully
-    // 2: Get password successfully
+    // 1: Modal Message Only
     type: { require: true, type: Number, default: 0 },
     message: { type: String, default: 'Successfully' }
   },
